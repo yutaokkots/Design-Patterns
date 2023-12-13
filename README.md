@@ -1,5 +1,7 @@
 # Design Patterns
 
+## Introduction
+
 > One thing expert designers know not to do is solve every problem from first principles. Rather, they reuse solutions that have worked for them in the past. When they find a good solution, they use it again and again. Such experience is part of what makes them experts. Consequently, you'll find recurring patterns of classes and communicating objects in many object-oriented systems. These patterns solve specific design problems and make object-oriented designs more flexible, elegant, and ultimately reusable. They help designers reuse successful designs by basing new designs on prior experience. A designer who is familiar with such patterns can apply them immediately to design problems without having to rediscover them. [1]
 
 >[Design patterns are] *descriptions of communicating objects and classes that are customized to solve a general design problem in a particular contex*.[2]
@@ -8,10 +10,9 @@
 
 - Because design patterns encapsulate solutions to recurring problems, conceptualizing and understanding patterns allows for an **abstraction for reasoning about designs**. 
 - The patterns integrate and encapsulate **best practices** that have been proven to work. 
-- Bridges the gap between high level design concepts with implementation allowing for easier **transition between design and development**. 
+- Patterns bridge the gap between high level design concepts with implementation allowing for easier **transition between design and development**. 
 - Having a common **design vocabulary** allows common language for discussion among developers.
 - Patterns enable **documentation** of explicit solutions to common problems.
-
 
 # OOP Design Patterns Table
 
@@ -24,8 +25,10 @@ Common Object Oriented Programming Design Patterns.
 
 # Design Pattern Concepts Index
 
-### [Design Pattern Overview](./design-patterns/design-patterns.md)
-
+[Design Pattern Overview](./design-patterns/design-patterns.md)
+1. [Creational Patterns](./design-patterns//OOP01-creational-patterns/creational-patterns.md)
+2. [Structural Patterns](./design-patterns/OOP02-structural-patterns/structural-patterns.md)
+3. [Behavioral Patterns](./design-patterns/OOP03-behavioral-patterns/behavioral-patterns.md)
 <hr/>
 
 ### **Sources**
