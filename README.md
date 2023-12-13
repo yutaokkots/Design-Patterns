@@ -16,22 +16,30 @@
 
 # OOP Design Patterns Table
 
-Common Object Oriented Programming Design Patterns.
+Common Object Oriented Programming Design Patterns. [3]
 
-||[Creational](./design-patterns//OOP01-creational-patterns/creational-patterns.md)|[Structural](./design-patterns/OOP02-structural-patterns/structural-patterns.md)|[Behavioral](./design-patterns/OOP03-behavioral-patterns/behavioral-patterns.md)|
+|Scope|&#124; ----------|Purpose|---------------- &#124;|
 |---|---|---|---|
+||[**Creational**](./design-patterns//OOP01-creational-patterns/creational-patterns.md)|[**Structural**](./design-patterns/OOP02-structural-patterns/structural-patterns.md)|[**Behavioral**](./design-patterns/OOP03-behavioral-patterns/behavioral-patterns.md)|
 |**class**|factory|adapter|interpretor<br/> template method|
 |**object**|abstract<br/> builder<br/> prototype<br/> singleton|adapter<br/> bridge<br/> composite<br/> decorator<br/> facade<br/> flyweight<br/> proxy|chain of responsibility<br/> command<br/> iterator<br/> mediator<br/> memento<br/> observer<br/> state<br/> strategy<br/> visitor|
 
 # Design Pattern Concepts Index
 
-[Design Pattern Overview](./design-patterns/design-patterns.md)
-1. [Creational Patterns](./design-patterns//OOP01-creational-patterns/creational-patterns.md)
-2. [Structural Patterns](./design-patterns/OOP02-structural-patterns/structural-patterns.md)
-3. [Behavioral Patterns](./design-patterns/OOP03-behavioral-patterns/behavioral-patterns.md)
+I. Introduction to Classes and concepts
+
+II. [Design Pattern Overview](./design-patterns/design-patterns.md)
+
+&emsp;A. [Creational Patterns](./design-patterns//OOP01-creational-patterns/creational-patterns.md)
+
+&emsp;B. [Structural Patterns](./design-patterns/OOP02-structural-patterns/structural-patterns.md)
+
+&emsp;C. [Behavioral Patterns](./design-patterns/OOP03-behavioral-patterns/behavioral-patterns.md)
 <hr/>
 
 ### **Sources**
 [1] Gamma, Erich; Helm, Richard; Johnson, Ralph; Vlissides, John (1995). Design Patterns. Massachusetts: Addison-Wesley. p.1. ISBN 0-201-63361-2. Retrieved 2023-12-13.
 
 [2] Gamma *et. al.* p.3.
+
+[2] Gamma *et. al.* p.10.
