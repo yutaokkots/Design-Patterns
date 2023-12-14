@@ -174,5 +174,7 @@ Parameterized types are a third way (in addition to class inheritance and object
 
 
 <hr/>
+
 ## Resources
+
 [1] Gamma, Erich; Helm, Richard; Johnson, Ralph; Vlissides, John (1995). Design Patterns. Massachusetts: Addison-Wesley. p.18. ISBN 0-201-63361-2. Retrieved 2023-12-13.
