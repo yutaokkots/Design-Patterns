@@ -22,7 +22,9 @@ A program's ***run-time*** structure consists of rapidly changing networks of co
 
 Redesign is a risk and is expensive.
 
-### Redesign causes and Design Patterns to prevent redesign:
+<div align="center">
+
+### **Redesign causes and Design Patterns to prevent redesign**
 
 |    | Reason for Redesign<sup>[1]</sup> | Design Pattern that prevent redesign |  
 | -- | ------------------- | -- | 
@@ -35,6 +37,7 @@ Redesign is a risk and is expensive.
 |  7 | **Extending functionality by subclassing.** Customizing an object by subclassing often isn't easy. Every new class has a fixed implementation overhead (initialization, finalization, etc.). Defining a subclass also requires an in-depth understanding of the parent class. For example, overriding one operation might require overriding another. An overridden operation might be required to call an inherited operation. And subclassing can lead to an explosion of classes, because you might have to introduce many new subclasses for even a simple extension. <br/> Object composition in general and delegation in particular provide flexible alter- natives to inheritance for combining behavior. New functionality can be added to an application by composing existing objects in new ways rather than by defining new subclasses of existing classes. On the other hand, heavy use of object com- position can make designs harder to understand. Many design patterns produce designs in which you can introduce customized functionality just by defining one subclass and composing its instances with existing ones.| Bridge<sup>S-(ob)</sup> <br/> Chain of Responsibility<sup>B-(ob)</sup> <br/> Composite<sup>S-(ob)</sup> <br/>Decorator<sup>S-(ob)</sup><br/> Observer<sup>B-(ob)</sup> <br/> Strategy<sup>B-(ob)</sup>|
 |  8 | **Inability to alter classes conveniently.** Sometimes you have to modify a class that can't be modified conveniently. Perhaps you need the source code and don't have it (as may be the case with a commercial class library). Or maybe any change would require modifying lots of existing subclasses. Design patterns offer ways to modify classes in such circumstances. |Adapter<sup>S-(cl)</sup> <br/> Decorator<sup>S-(ob)</sup> <br/>Visitor<sup>B-(ob)</sup> | 
 
+</div>>
 
 <hr/>
 

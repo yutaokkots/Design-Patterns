@@ -1,4 +1,5 @@
 # Classes
+
 ## Definitions and Explanations
 
 The **class** specifies the object's internal data and representation (**class attributes**), and the operations the object can perform (**class methods**).
@@ -13,7 +14,9 @@ The **class** specifies the object's internal data and representation (**class a
             │Type InstanceVariable2 │
             └───────────────────────┘
 ```
-**Instantiation** - Objects are created by instantiating a class. The process of instantiating a class **allocates memory** storage for the object's internal data and associates the operations with the data. 
+<a id="instantiation"></a>
+
+**Instantiation** - Objects are created by instantiating a class. <br/>The process of instantiating a class **allocates memory** storage for the object's internal data and associates the operations with the data. 
 
 ```
             ┌─────────────┐
@@ -75,26 +78,50 @@ The **class** specifies the object's internal data and representation (**class a
 ### Benefits of Inheritance
 
 The abstract class is the interface between the parent class and subclass. 
-By manipulating the abstract, there are two benefits <sup>[1]</sup>:
+By manipulating the abstract, there are two benefits:
 
 1. Clients remain unaware of the specific types of objects they use, as long as objects adhere to the interface. 
 2. Clients remain unaware of the classes that implement these objects; clients only know about the abstract classes defining the interface. 
 
-<ins>The first principle of reusable Object-Oriented Design:</ins>
+<div align="center">
 
->***Program to an interface, not an implementation***
+<hr>
+<ins>The first principle of reusable Object-Oriented Design:</ins>
+<span style="color:darkred">
+
+***Program to an interface, not an implementation.***
+
+</span>
+<hr>
+</div>
+
+## Class Composition
 
 **Composition** - new functionality is obtained by assembling or composing objects to get more complex functionality. Composition is an alternative to inheritance. 
 
-### Class Inheritance vs Class Composition
+<div align="center">
+
+### **Inheritance vs Composition**
+
 | |Inheritance|Composition|
 |--|--|--|
 |Advantages| -Supported directly by programming language; <br>-Defined statically at compile time;<br>-Makes it easier to modify the implementation being reused | Defined dynamically at run time via objects requiring references to other objects; <br>-Composition requires objects to be designed carefully to interface with other objects, and thus does not break encapsulation; <br>-Fewer implementation dependencies because an object's implementation is written around the interface |
 |Disadvantages| -Cannot change the implementation at run time; <br> -Parent classes often define at least part of their subclasses' representation; <br>-Because the parent class reveals or exposes the details of its implementation to subclass, it is said to "break encapsulation"|-System's behavior will depend on the interrelationship among objects, instead of being defined in one class|
 
+</div>
+
+<div align="center">
+<hr>
 <ins>The second principle of reusable Object-Oriented Design:</ins>
 
->***Favor object composition over class inheritance***
+<span style="color:darkred">
+
+***Favor object composition over class inheritance.***
+
+</span>
+
+<hr>
+</div>
 
 ### Class Composition and Delegation
 
@@ -134,19 +161,29 @@ A <ins>**receiving object**</ins> receives a request or has a task to perform, b
 
 Delegation allows ***behaviors to be composed at run-time***, and change the way it is composed. 
 
+<div align="center">
+
+### **Delegation as it relates to Composition**
+
 | composition | -might use->| delegation | |
 |--|--|--|--|
 |  A design principle where a class contains an object of another class as a part. The containing class is composed of, or has a reference to, the contained class | Composition can incorpoate delegation.-> | A design pattern that allows an object to pass on certain responsibilities or tasks to another object  | |
 |  |  | -Delegation allows ***behaviors to be composed at run-time***, and change the way it is composed.<br/>-It can be a good design choice only when it simplifies more than it complicates.  | **Advantages**|
 |  |  |  -Dynamic, highly parameterized software is harder to understand than more static software <br/> -Run-time inefficiencies| **Disadvantages**|
 
-**State**, **Strategy**, and **Visitor** (<ins>Behavioral</ins> design patterns) require Delegation.
+</div>
 
-**Mediator** and **Chain of Responsibility** (<ins>Behavioral</ins> design patterns), and **Bridge** (<ins>Structural</ins> design pattern) use Delegation.
+<sub>**State**, **Strategy**, and **Visitor** (<ins>Behavioral</ins> design patterns) require Delegation.</sub>
 
-### Class Inheritance vs Parameteryzed types
+<sub>**Mediator** and **Chain of Responsibility** (<ins>Behavioral</ins> design patterns), and **Bridge** (<ins>Structural</ins> design pattern) use Delegation.</sub>
 
-**Parameteryzd types** are objects where the type is defined as a parameter at the point of use. 
+## Parameteryzed types
+
+**Parameteryzed types** are objects where the type is defined as a parameter at the point of use. <br/> Parameterized types are a third way (in addition to class inheritance and object composition) to compose behavior in object-oriented systems.
+
+<div align="center">
+
+### **Examples of Parameteryzed Types in Various Languages**
 
 | Language | Term | Example |
 | -- | -- | -- |
@@ -157,8 +194,9 @@ Delegation allows ***behaviors to be composed at run-time***, and change the way
 | Typescript| Generics  |  `class MyClass<T> {` <br/> `··// code` <br/> `}` |
 | Ruby      | Generics  | `require 'dry-types'` <br/> `module Types` <br> `··include Dry::Types.module` <br/> `end` <br/> `class MyContainer` <br/> `··include Types` <br/> `··# code` <br/> `end`|
 
-Parameterized types are a third way (in addition to class inheritance and object composition) to compose behavior in object-oriented systems.
+</div>
 
+<hr/>
 
 ## Summary
 
@@ -177,4 +215,4 @@ Parameterized types are a third way (in addition to class inheritance and object
 
 ## Resources
 
-[1] Gamma, Erich; Helm, Richard; Johnson, Ralph; Vlissides, John (1995). Design Patterns. Massachusetts: Addison-Wesley. p.18. ISBN 0-201-63361-2. Retrieved 2023-12-13.
+Gamma, Erich; Helm, Richard; Johnson, Ralph; Vlissides, John (1995). Design Patterns. Massachusetts: Addison-Wesley. Chapter 1. ISBN 0-201-63361-2. Retrieved 2023-12-13.

@@ -8,9 +8,12 @@
 - Having a common **design vocabulary** allows common language for discussion among developers.
 - Patterns enable **documentation** of explicit solutions to common problems.
 
-# OOP Design Patterns Table
+# OOP Design Patterns
 
-Common Object Oriented Programming Design Patterns. <sup>[1]</sup>
+<div align="center">
+
+### **Common Object Oriented Programming Design Patterns** <sup>[1]</sup>
+
 
 |├── Scope ──┤|├─────────|── Purpose ──|─────────┤|
 |:---:|---|---|---|
@@ -18,7 +21,11 @@ Common Object Oriented Programming Design Patterns. <sup>[1]</sup>
 |**class**|· factory|· adapter|· interpretor<br/> · template method|
 |**object**|· abstract factory<br/> · builder<br/> · prototype<br/> · singleton|· adapter<br/> · bridge<br/> · composite<br/> · decorator<br/> · facade<br/> · flyweight<br/> · proxy|· chain of responsibility<br/> · command<br/> · iterator<br/> · mediator<br/> · memento<br/> · observer<br/> · state<br/> · strategy<br/> · visitor|
 
-# Design Pattern Concepts Index
+</div>
+
+# Index of Design Pattern Concepts
+
+
 
 I. Introduction to [classes](./design-patterns/Classes.md) and [design concepts](./design-patterns/Design-concepts.md)
 
