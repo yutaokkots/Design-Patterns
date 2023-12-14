@@ -24,7 +24,7 @@
 ||Creational|Structural|Behavioral|
 |---|---|---|---|
 |**class**|factory|adapter|interpretor<br/> template method|
-|**object**|abstract<br/> builder<br/> prototype<br/> singleton|adapter<br/> bridge<br/> composite<br/> decorator<br/> facade<br/> flyweight<br/> proxy|chain of responsibility<br/> command<br/> iterator<br/> mediator<br/> memento<br/> observer<br/> state<br/> strategy<br/> visitor|
+|**object**|abstract factory<br/> builder<br/> prototype<br/> singleton|adapter<br/> bridge<br/> composite<br/> decorator<br/> facade<br/> flyweight<br/> proxy|chain of responsibility<br/> command<br/> iterator<br/> mediator<br/> memento<br/> observer<br/> state<br/> strategy<br/> visitor|
 
 
 
