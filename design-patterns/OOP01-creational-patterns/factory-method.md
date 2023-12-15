@@ -1,10 +1,10 @@
 # Factory Method
 
 The Factory Method is a creational design pattern, where a Factory acts as an interface for creating an object. 
-If subclasses that inherit from the Factory are further defined, these subclasses can include modifications such its instantiated objects have modified behaviors/characteristics. 
+If subclasses that inherit from the Factory are further defined, these subclasses can include modifications such that its instantiated objects have modified behaviors/characteristics. 
 
 ## Background Example
-The following LanguageLocalizer classes are shown to represent the difference between a standard class creation process, and the introduction of a Factory method design pattern.
+The following LanguageLocalizer classes are shown to represent the difference between a standard class creation process, and the introduction of a Factory method design pattern. "Localizer" here is referring to "localization" or 'l10n' used in adapting languages for different locales or target markets. 
 
 The Following LanguageLocalizater classes contain 
 
