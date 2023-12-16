@@ -76,7 +76,7 @@ When each of these subclasses are instantiated, it takes parameters (in this cas
                         △ 
                         │
         ┌───────────────┴───┬──────────────────┐
-┌─────────────────┐┌─────────────────┐┌─────────────────┐
+┌───────┴─────────┐┌────────┴────────┐┌────────┴────────┐
 │ChineseLocalizer ││SpanishLocalizer ││EnglishLocalizer │
 ├─────────────────┤├─────────────────┤├─────────────────┤
 │self.language    ││self.language    ││self.language    │
@@ -132,7 +132,7 @@ class LanguageLocalizer(AbstractLocalizer):
                 └───────┬─────────┘
                         △ 
                         │
-                ┌─────────────────┐
+                ┌───────┴─────────┐
                 │LanguageLocalizer│
                 ├─────────────────┤
                 │self.language    │
