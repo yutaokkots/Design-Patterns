@@ -33,6 +33,12 @@ II. [Design Pattern Overview](./design-patterns/design-patterns.md)
 
 &emsp;A. [Creational Patterns](./design-patterns//OOP01-creational-patterns/creational-patterns.md)
 
+1. Factory method
+2. Abstract factory
+3. Builder
+4. Prototype
+5. Singleton
+
 &emsp;B. [Structural Patterns](./design-patterns/OOP02-structural-patterns/structural-patterns.md)
 
 &emsp;C. [Behavioral Patterns](./design-patterns/OOP03-behavioral-patterns/behavioral-patterns.md)

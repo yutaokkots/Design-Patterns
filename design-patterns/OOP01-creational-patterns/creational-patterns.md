@@ -14,8 +14,8 @@
 |├── Scope ──┤|├─────────|── Purpose ──|─────────┤|
 |:---:|---|---|---|
 ||**Creational**|<span style="color:lightgray">**Structural**</span>|<span style="color:lightgray">**Behavioral**</span>|
-|**class**|· [factory](#factory-method)|<span style="color:lightgray">· adapter</span>|<span style="color:lightgray">· interpretor<br/> · template method</span>|
-|**object**|· [abstract factory](#abstract-factory)<br/> · [builder](#builder)<br/> · [prototype](#prototype)<br/> · [singleton](#singleton)|<span style="color:lightgray">· adapter<br/> · bridge<br/> · composite<br/> · decorator<br/> · facade<br/> · flyweight<br/> · proxy </span>|<span style="color:lightgray">· chain of responsibility<br/> · command<br/> · iterator<br/> · mediator<br/> · memento<br/> · observer<br/> · state<br/> · strategy<br/> · visitor </span>|
+|**class**|· [factory](./factory-method.md)|<span style="color:lightgray">· adapter</span>|<span style="color:lightgray">· interpretor<br/> · template method</span>|
+|**object**|· [abstract factory](./abstract-factory.md)<br/> · [builder](./builder.md)<br/> · [prototype](#prototype)<br/> · [singleton](#singleton)|<span style="color:lightgray">· adapter<br/> · bridge<br/> · composite<br/> · decorator<br/> · facade<br/> · flyweight<br/> · proxy </span>|<span style="color:lightgray">· chain of responsibility<br/> · command<br/> · iterator<br/> · mediator<br/> · memento<br/> · observer<br/> · state<br/> · strategy<br/> · visitor </span>|
 
 </div>
 
@@ -23,19 +23,19 @@
 
 ## Factory Method Pattern
 
-The factory method pattern defines an interface for creating an object but allows subclasses to alter the type of objects that will be created. It promotes loose coupling between the creator and the products, providing flexibility in instantiating different types of objects.
+The [factory method pattern](./factory-method.md) defines an interface for creating an object but allows subclasses to alter the type of objects that will be created. It promotes loose coupling between the creator and the products, providing flexibility in instantiating different types of objects.
 
 <a id="abstract-factory"></a>
 
 ## Abstract Factory Pattern
 
-Abstract Factory Pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes. It allows the system to be independent of how its objects are created, composed, and represented, promoting flexibility in object creation.
+[Abstract Factory Pattern](./abstract-factory.md) provides an interface for creating families of related or dependent objects without specifying their concrete classes. It allows the system to be independent of how its objects are created, composed, and represented, promoting flexibility in object creation.
 
 <a id="builder"></a>
 
 ## Builder Pattern
 
-The Builder Pattern separates the construction of a complex object from its representation, allowing the same construction process to create different representations. This pattern helps manage the construction of complex objects step by step and facilitates the creation of varied products.
+The [Builder Pattern](./builder.md) separates the construction of a complex object from its representation, allowing the same construction process to create different representations. This pattern helps manage the construction of complex objects step by step and facilitates the creation of varied products.
 
 <a id="prototype"></a>
 
