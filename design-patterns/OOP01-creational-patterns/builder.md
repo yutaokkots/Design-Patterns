@@ -32,7 +32,36 @@ A builder may be needed when an object cannot be produced in one step.
                                     │getResult(): Product│
                                     └────────────────────┘
 ```
+## Applicability 
 
+Use the **Builder** pattern when <sup>[2]</sup>:
+
+* the algorithm for creating a complex object should be independent of the parts that make up the object and how they're assembled.
+
+* the construction process must allow different representations for the object that's constructed.
+
+## Comparison with Abstract Factory
+```
+    Abstract Factory                        Builder
+                └───────────────┬──────────────┘
+                      constructs│complex objects
+                            ┌───┴───┐
+                            │       ├─constructs a 
+            emphasis on ────┘       ├─complex object
+            a family of             ├─step 
+        product objects             ├─by
+                │                   ├─step
+       product returned             │
+            immediately         Builder returns product
+                                        as final step.
+``` 
+
+Abstract Factory is similar to Builder in that it too may construct complex objects. The primary difference is that the Builder pattern focuses on constructing a complex object step by step. Abstract Factory's emphasis is on families of product objects (either simple or complex). Builder returns the product as a final step, but as far as the Abstract Factory pattern is concerned, the product gets returned immediately. <sup>[3]</sup>
 
 <hr>
+
 [1] Gamma, Erich; Helm, Richard; Johnson, Ralph; Vlissides, John (1995). Design Patterns. Massachusetts: Addison-Wesley. p.97. ISBN 0-201-63361-2. Retrieved 2023-12-13.
+
+[2] Gamma *et. al.* p.98.
+
+[3] Gamma *et. al.* p.105.
