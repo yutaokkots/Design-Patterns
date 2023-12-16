@@ -18,7 +18,7 @@ Instead:
 
 A traditional approach to copying an existing object involves -> 
 
-    creating a new object of the same class and manually copying the values and applying the functionalities of the original object. 
+> creating a new object of the same class and manually copying the values and applying the functionalities of the original object. 
 
 However, there are challenges with this approach:
 
@@ -147,31 +147,31 @@ concretePrototype   ┌───┘   └───────────┐   
             |                               |
             |                               |   
 ┌ - - - - - ┴ - - - - - - - - - - - ┐       |
-│ teacher = Teacher("Sean Cambpell",│       |        
-│     "Creational Design Patterns   │       |        
-│     in Python")                   │       |        
+| teacher = Teacher("Sean Cambpell",|       |        
+|     "Creational Design Patterns   |       |        
+|     in Python")                   |       |        
 ├ - - - - - - - - - - - - - - - - - ┤       |       
-│self.name = "Sean Cambpell"        │       |       
-│self.course = "Creational De..."   │       |       
-│clone()                            │       |       
-│display()                          │       |       
+|self.name = "Sean Cambpell"        |       |       
+|self.course = "Creational De..."   |       |       
+|clone()                            |       |       
+|display()                          |       |       
 └ - - - ┬ - - - - - - - - - - - - - ┘       |       
         |       ┌ - - - - - - - - - - - - - ┴ - ┐
-        |       │ student = Student("Emma       │ 
-        └ - - > │     Ortebana", teacher)       │ 
+        |       | student = Student("Emma       | 
+        └ - - > |     Ortebana", teacher)       | 
                 ├ - - - - - - - - - - - - - - - ┤
-                │self.name = "Emma Ortebana"    │
-                │self.teacher = "Sean Cambpell" │
-                │clone()                        │ <─┐
-                │display()                      │   │
+                |self.name = "Emma Ortebana"    |
+                |self.teacher = "Sean Cambpell" |
+                |clone()                        | <─┐
+                |display()                      |   │
                 └ - - - - - - - - - - - - - - - ┘   │
                   ┌ - - - - - - - - - - - - - - - ┐ │
-                  │ studentClone = student.clone()├─┘
+                  | studentClone = student.clone()├─┘
                   ├ - - - - - - - - - - - - - - - ┤
-                  │self.name = "Emma Ortebana"    │
-                  │self.teacher = "Sean Cambpell" │
-                  │clone()                        │
-                  │display()                      │
+                  |self.name = "Emma Ortebana"    |
+                  |self.teacher = "Sean Cambpell" |
+                  |clone()                        |
+                  |display()                      |
                   └ - - - - - - - - - - - - - - - ┘
 ```
 The following is an example of calling the clone() method.
