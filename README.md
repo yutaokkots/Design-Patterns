@@ -18,8 +18,8 @@
 |├── Scope ──┤|├─────────|── Purpose ──|─────────┤|
 |:---:|---|---|---|
 ||[**Creational**](./design-patterns//OOP01-creational-patterns/creational-patterns.md)|[**Structural**](./design-patterns/OOP02-structural-patterns/structural-patterns.md)|[**Behavioral**](./design-patterns/OOP03-behavioral-patterns/behavioral-patterns.md)|
-|**class**|· factory|· adapter|· interpretor<br/> · template method|
-|**object**|· abstract factory<br/> · builder<br/> · prototype<br/> · singleton|· adapter<br/> · bridge<br/> · composite<br/> · decorator<br/> · facade<br/> · flyweight<br/> · proxy|· chain of responsibility<br/> · command<br/> · iterator<br/> · mediator<br/> · memento<br/> · observer<br/> · state<br/> · strategy<br/> · visitor|
+|**class**|· [factory](./design-patterns/OOP01-creational-patterns/factory-method.md)|· adapter|· interpretor<br/> · template method|
+|**object**|· [abstract factory](./design-patterns/OOP01-creational-patterns/abstract-factory.md)<br/> · [builder](./design-patterns/OOP01-creational-patterns/builder.md)<br/> · [prototype](./design-patterns/OOP01-creational-patterns/prototype.md))<br/> · singleton|· adapter<br/> · bridge<br/> · composite<br/> · decorator<br/> · facade<br/> · flyweight<br/> · proxy|· chain of responsibility<br/> · command<br/> · iterator<br/> · mediator<br/> · memento<br/> · observer<br/> · state<br/> · strategy<br/> · visitor|
 
 </div>
 

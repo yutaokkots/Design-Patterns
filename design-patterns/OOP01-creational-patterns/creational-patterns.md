@@ -15,7 +15,7 @@
 |:---:|---|---|---|
 ||**Creational**|<span style="color:lightgray">**Structural**</span>|<span style="color:lightgray">**Behavioral**</span>|
 |**class**|· [factory](./factory-method.md)|<span style="color:lightgray">· adapter</span>|<span style="color:lightgray">· interpretor<br/> · template method</span>|
-|**object**|· [abstract factory](./abstract-factory.md)<br/> · [builder](./builder.md)<br/> · [prototype](#prototype)<br/> · [singleton](#singleton)|<span style="color:lightgray">· adapter<br/> · bridge<br/> · composite<br/> · decorator<br/> · facade<br/> · flyweight<br/> · proxy </span>|<span style="color:lightgray">· chain of responsibility<br/> · command<br/> · iterator<br/> · mediator<br/> · memento<br/> · observer<br/> · state<br/> · strategy<br/> · visitor </span>|
+|**object**|· [abstract factory](./abstract-factory.md)<br/> · [builder](./builder.md)<br/> · [prototype](./prototype.md)<br/> · [singleton](#singleton)|<span style="color:lightgray">· adapter<br/> · bridge<br/> · composite<br/> · decorator<br/> · facade<br/> · flyweight<br/> · proxy </span>|<span style="color:lightgray">· chain of responsibility<br/> · command<br/> · iterator<br/> · mediator<br/> · memento<br/> · observer<br/> · state<br/> · strategy<br/> · visitor </span>|
 
 </div>
 
