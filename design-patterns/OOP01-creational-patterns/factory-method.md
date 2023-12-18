@@ -1,7 +1,37 @@
 # Factory Method
 
-The Factory Method is a creational design pattern, where a Factory acts as an interface for creating an object. 
+The Factory Method is a creational design pattern, where the Factory acts as an interface for creating an object. 
+
+The Factory class encapsulates the business logic for creating an object.
+
 If subclasses that inherit from the Factory are further defined, these subclasses can include modifications such that its instantiated objects have modified behaviors/characteristics. 
+
+In other words, in the Factory Method pattern, the class that creates an object, and the decision on when and how to create an object are separated.
+The classes defer instantiation to subclasses; the subclasses actually create the object. 
+
+## UML Diagram
+The entire point here is to create an **instance of a ConcreteProduct** (bottom-left).
+**ConcreteProduct** sublcass is a variation of the **Product** class. 
+
+The **ConcreteCreator** is responsible for the logic behind the creation of the **instance of a ConcreteProduct**. 
+And incidentally, ConcreteCreator is a subclass of **Creator**, where Creator is an abstraction of the creation process. 
+
+```
+    ┌───────────────┐       ┌───────────────────┐
+    │ Product       │       │ Creator           │
+    ├───────────────┤       ├───────────────────┤
+    │               │       │ factoryMethod()   │
+    └───────┬───────┘       │ anOperation()     │
+            △               └─────────┬─────────┘
+            │                         △  
+    ┌───────┴───────┐       ┌─────────┴─────────┐
+    │ConcreteProduct│<──────│ ConcreteCreator   │
+    ├───────────────┤       ├───────────────────┤
+    │               │       │ factoryMethod()   │
+    └───────────────┘       └───────────────────┘
+                the ConcreteCreator makes the
+                ConcreteProduct. 
+```
 
 ## Background Example
 The following LanguageLocalizer classes are shown to represent the difference between a standard class creation process, and the introduction of a Factory method design pattern. "Localizer" here is referring to "localization" or 'l10n' used in adapting languages for different locales or target markets. 
@@ -97,10 +127,10 @@ for m in message:
 
 ## Using the Factory design pattern 
 
-In an example of implementing the **Factory design pattern**, another class called Factory is introduced. 
+In an example of implementing the **Factory design pattern**, another class called LanguageFactory is introduced. The LanguageFactory encapsulates the business logic required to create one of the language Localizer objects (FrenchLocalizer, EnglishLocalizer, JapaneseLocalizer, SpanishLocalizer).
 
 ```
-def Factory(language="English"):
+def LanguageFactory(language="English"):
     """Factory class for the Localizers."""
 
     localizers = {
@@ -111,7 +141,7 @@ def Factory(language="English"):
     }
     return localizers[language]()
 ```
-The Factory is a subclass of the LanguageLocalizer classes. 
+The LanguageFactory is a subclass of the LanguageLocalizer classes. 
 It includes a parameter to take in the type of Language to use. Therefore, the Factory class, when instantiated, produces a different type of Localizer depending on how it is defined when instantiated. 
 ```
 ┌─────────────────┐┌─────────────────┐┌─────────────────┐┌─────────────────┐ 
@@ -133,12 +163,12 @@ Rather than instantiating the LanguageLocalizer class directly.
 
 (e.g. `f = FrenchLocalizer()`)
 
-The following code instantiated the Factory class. 
+The following code instantiates the LanguageFactory class. 
 ```
-f = Factory("French")
-e = Factory("English")
-s = Factory("Spanish")
-j = Factory("Japanese")
+f = LanguageFactory("French")
+e = LanguageFactory("English")
+s = LanguageFactory("Spanish")
+j = LanguageFactory("Japanese")
 ```
 The `localize()` method is called from the Factory rather than the LanguageLocalizer class directly.
 

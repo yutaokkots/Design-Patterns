@@ -133,7 +133,7 @@ The subclasses (Drinks) are forced to inherit parent class methods (Beverage), t
 
 Adding additional code to the parent class in order to customize subclasses can lead to unwieldly code. 
 
-## Using a Decorator in the above Beverage example
+## **Using a Decorator in the above Beverage example**
 
 Using a decorator can be applied to the above example, but **may not be the most suitable**. See below.  
 
@@ -171,9 +171,24 @@ AddOnDecorator ***is a Beverage*** and ***has a Beverage***.
 ```
 Decorators are used to represent the original Beverage object having additional responsibilities. 
 
-In this example, the decorator may not be the most suitable implementation. Instead, it may be more appropriate to pass in qualities (AddOns) during the creation of the object. Possibly use the iterator pattern to obtain information about the passed-in items to total costs. A decorator may instead by used for various cup-sizes or to include the tax. 
+In this example, the decorator may not be the most suitable implementation. Instead, it may be more appropriate to pass in qualities (AddOns) during the creation of the object. Possibly use the iterator pattern to obtain information about the passed-in items to total costs. A decorator may instead be used for various cup-sizes or to include the tax. 
 
-## Using a Decorator in other areas
+## **Using a Decorator in Python**
+
+[PEP 318](https://peps.python.org/pep-0318/) defines a number of syntaxes for decorators. 
+
+```
+    def exampleFunction(nums, target, ...):
+        return [n * target in n for nums]
+
+    func = declarator2(declarator1(exampleFunction))
+```
+```
+    @declarator2
+    @declarator1
+    def exampleFunction(nums, target, ...):
+        pass
+```
 
 - Use a decorator to deprecate code. 
 - Use a decorator to determine code execution time. 
