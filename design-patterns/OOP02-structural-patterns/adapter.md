@@ -41,6 +41,6 @@ Composition style implementation.
 * **Adapter** - making two interfaces that are not compatible, compatible.
 * **Facade** - taking complex interactions into a simplified interface. 
 * **Proxy** - calling a substitute, and substitute calls the target.
-* **Decorator** - adding a behavior to an object without modifying the object.
+* [**Decorator**](./decorator.md) - adding a behavior to an object without modifying the object.
 
 2. The intent of using adapters is to make two interfaces interoperable. The intent of adapters is ***not to change the underlying behavior*** of the InterfaceTarget. 

@@ -19,7 +19,7 @@
 |:---:|---|---|---|
 ||[**Creational**](./design-patterns//OOP01-creational-patterns/creational-patterns.md)|[**Structural**](./design-patterns/OOP02-structural-patterns/structural-patterns.md)|[**Behavioral**](./design-patterns/OOP03-behavioral-patterns/behavioral-patterns.md)|
 |**class**|· [factory](./design-patterns/OOP01-creational-patterns/factory-method.md)|· [adapter](./design-patterns/OOP02-structural-patterns/adapter.md)|· interpretor<br/> · template method|
-|**object**|· [abstract factory](./design-patterns/OOP01-creational-patterns/abstract-factory.md)<br/> · [builder](./design-patterns/OOP01-creational-patterns/builder.md)<br/> · [prototype](./design-patterns/OOP01-creational-patterns/prototype.md))<br/> · singleton|· [adapter](./design-patterns/OOP02-structural-patterns/adapter.md)<br/> · bridge<br/> · composite<br/> · decorator<br/> · facade<br/> · flyweight<br/> · proxy|· chain of responsibility<br/> · command<br/> · iterator<br/> · mediator<br/> · memento<br/> · observer<br/> · state<br/> · strategy<br/> · visitor|
+|**object**|· [abstract factory](./design-patterns/OOP01-creational-patterns/abstract-factory.md)<br/> · [builder](./design-patterns/OOP01-creational-patterns/builder.md)<br/> · [prototype](./design-patterns/OOP01-creational-patterns/prototype.md)<br/> · singleton|· [adapter](./design-patterns/OOP02-structural-patterns/adapter.md)<br/> · bridge<br/> · composite<br/> · [decorator](./design-patterns/OOP02-structural-patterns/decorator.md)<br/> · facade<br/> · flyweight<br/> · proxy|· chain of responsibility<br/> · command<br/> · iterator<br/> · mediator<br/> · memento<br/> · observer<br/> · state<br/> · strategy<br/> · visitor|
 
 </div>
 
@@ -36,7 +36,7 @@ II. [Design Pattern Overview](./design-patterns/design-patterns.md)
 1. [Factory Method](./design-patterns/OOP01-creational-patterns/factory-method.md)
 2. [Abstract Factory](./design-patterns/OOP01-creational-patterns/abstract-factory.md)
 3. [Builder](./design-patterns/OOP01-creational-patterns/builder.md)
-4. [Prototype](./design-patterns/OOP01-creational-patterns/prototype.md))
+4. [Prototype](./design-patterns/OOP01-creational-patterns/prototype.md)
 5. Singleton
 
 &emsp;B. [Structural Patterns](./design-patterns/OOP02-structural-patterns/structural-patterns.md)
@@ -44,7 +44,7 @@ II. [Design Pattern Overview](./design-patterns/design-patterns.md)
 1. [Adapter](./design-patterns/OOP02-structural-patterns/adapter.md)
 2. Bridge
 3. Composite
-4. Decorator
+4. [Decorator](./design-patterns/OOP02-structural-patterns/decorator.md)
 5. Facade
 6. Flyweight
 7. Proxy
