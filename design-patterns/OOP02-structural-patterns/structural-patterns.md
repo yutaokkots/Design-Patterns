@@ -12,10 +12,17 @@
 
 </div>
 
+## Structural Patterns
+
+Concerned with how classes and objects are composed to form larger structures. 
+
+**Structural** ***class*** **patterns** use inheritance to compose interfaces/implementations
+
+**Structural** ***object*** **patterns** describe ways to compose objects to realize functionality.
 
 ## Adapter Pattern
 
-An Adapter allows incompatible interfaces to work together by providing a wrapper that converts the interface of a class into another interface that a client expects. It helps integrate existing systems and classes that otherwise couldn't collaborate.
+An Adapter (wrapper) allows incompatible interfaces to work together by providing a wrapper that converts the interface of a class into another interface that a client expects. It helps integrate existing systems and classes that otherwise couldn't collaborate.
 
 ## Bridge Pattern
 

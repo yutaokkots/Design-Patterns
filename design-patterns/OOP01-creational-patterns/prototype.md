@@ -140,25 +140,25 @@ concretePrototype   ┌───┘   └───────────┐   
     │clone() (clone.clone())│       │clone() (clone.deepclone())│
     │display()              │       │display()                  │
     │get_course()           │       └───────────────────────────┘
-    │set_course()           │               |
+    │set_course()           │               .
     └───────────────────────┘   once instantiated, call clone()
-            |                   to create a copy 
-            |                   (rather than creating a new instance) 
-            |                               |
-            |                               |   
-┌ - - - - - ┴ - - - - - - - - - - - ┐       |
-| teacher = Teacher("Sean Cambpell",|       |        
-|     "Creational Design Patterns   |       |        
-|     in Python")                   |       |        
-├ - - - - - - - - - - - - - - - - - ┤       |       
-|self.name = "Sean Cambpell"        |       |       
-|self.course = "Creational De..."   |       |       
-|clone()                            |       |       
-|display()                          |       |       
-└ - - - ┬ - - - - - - - - - - - - - ┘       |       
-        |       ┌ - - - - - - - - - - - - - ┴ - ┐
+            .                   to create a copy 
+            .                   (rather than creating a new instance) 
+            .                               .
+            .                               .   
+┌ - - - - - ┴ - - - - - - - - - - - ┐       .
+| teacher = Teacher("Sean Cambpell",|       .        
+|     "Creational Design Patterns   |       .        
+|     in Python")                   |       .        
+├ - - - - - - - - - - - - - - - - - ┤       .       
+|self.name = "Sean Cambpell"        |       .       
+|self.course = "Creational De..."   |       .       
+|clone()                            |       .       
+|display()                          |       .       
+└ - - - - - - - - - - - - - - - - - ┘       .       
+        ^       ┌ - - - - - - - - - - - - - ┴ - ┐
         |       | student = Student("Emma       | 
-        └ - - > |     Ortebana", teacher)       | 
+        └ - - - ┤     Ortebana", teacher)       | 
                 ├ - - - - - - - - - - - - - - - ┤
                 |self.name = "Emma Ortebana"    |
                 |self.teacher = "Sean Cambpell" |
