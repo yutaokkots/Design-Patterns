@@ -6,7 +6,7 @@
 
 A builder may be needed when an object cannot be produced in one step. 
 
-## Terms
+## Definitions
 
 ***`Director`*** - interfaces `Builder`; aggregation relationship - A director object is instantiated, and its `construct()` method is called. The `construct()` method calls a specific Concrete Builder, and calls methods of the Concrete Builder in a specific order. A `getResult()` method of the Concrete Builder object retrieves the Product. 
 
@@ -62,6 +62,6 @@ Use the **Builder** pattern when <sup>[2]</sup>:
 
 [1] Gamma, Erich; Helm, Richard; Johnson, Ralph; Vlissides, John (1995). Design Patterns. Massachusetts: Addison-Wesley. p.97. ISBN 0-201-63361-2. Retrieved 2023-12-13.
 
-[2] Gamma *et. al.* p.98.
+[2] Gamma *et al.* p.98.
 
-[3] Gamma *et. al.* p.105.
+[3] Gamma *et al.* p.105.
