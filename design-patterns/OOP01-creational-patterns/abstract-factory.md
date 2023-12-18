@@ -1,10 +1,41 @@
 # Abstract Factory
 
-The Abstract Factory is a creational design pattern that directly takes one or more parameters such that subclasses can be customized based on the Abstract Factory. 
+The Abstract Factory is a creational design pattern that directly takes one or more parameters such that subclasses can be customized based on them. Families of related or dependent objects can be created.
+
+An abstract factory is a ***set of factory methods***. 
+
+The Factory Method pattern is useful for creating a single object, while the Abstract Factory pattern is useful for creating multiple objects.
+
+## UML Diagram
+
+```
+┌───────────────┐           ┌───────────────────┐
+│ ProductA      │           │ Factory           │
+├───────────────┤           ├───────────────────┤
+└───────┬───────┘           │ getProductA()     │
+        △                   │ getProductB()     │
+    ┌───┴────────────┐      └─────┬───┬───┬─────┘
+    │ConcreteProductA│<┐          △   △   △    
+    ├────────────────┤ │          │   │   │ 
+    └────────────────┘ │  ┌───────┴───┼───┼───┐ <─────┐                 
+┌───────────────┐      │  │ ┌─────────┴───┼───┴─┐ <───┤ 
+│ ProductB      │      │  │ │ ┌───────────┴─────┴─┐ <─┤
+├───────────────┤      ├──┼─┼─┤ ConcreteFactory1  │   │
+└───────┬───────┘      │  │ │ ├───────────────────┤   │
+        △              │  └─┤ │ getProductA()     │   │
+    ┌───┴────────────┐ │    └─┤ getProductB()     │   │
+    │ConcreteProductB│<┘      └───────────────────┘   │
+    ├────────────────┤                                │
+    └────────────────┘          Each ConcreteFactory ─┘
+                                 creates a family of
+                                    related products
+```
 
 ## Using the Abstract Factory design pattern 
 
 The following `AbstractLocalizer` and Localizer classes demonstrate an Abstract Factory design pattern. "Localizer" here is referring to "localization" or 'l10n' used in adapting languages for different locales or target markets. 
+
+In this example, a website that is compatible with different regions is being created. When in a certain region of the world, the website displays text in the language that is predominantly used in that region. 
 
 The `AbstractLocalizer` allows objects to be passed into it (as parameters) to create subclasses that are customized for the parameter. 
 
@@ -85,6 +116,8 @@ When each of these subclasses are instantiated, it takes parameters (in this cas
 └─────────────────┘└─────────────────┘└─────────────────┘      
 ```
 
+In the example of localizing a website for a Spanish-speaking audience, the site may include pages that have different categories of words. 
+
 The `SpanishLocalizer` may be instantiated with the following categorical dictionaries. 
 
 ```
@@ -104,13 +137,18 @@ transportation_es = {
 }
 
 es_activi = SpanishLocalizer(activities_es)
+
 es_transp = SpanishLocalizer(transportation_es)
 
 print(es_activi.localize("rock climbing"))          # escalada de roca
 
 print(es_transp.localize("crosswalk"))              # paso de peatones
 ```
-Each of the `SpanishLocalizer` instances, `es_activi` and `es_transp` can be called to translate specific terms for the related categorical dictionaries.
+Each of the `SpanishLocalizer` instances, `es_activi` and `es_transp` can be called to translate specific terms for the related categorical dictionaries. 
+
+The `es_activi` and `es_transp` objects are part of the family of spanish Localizer objects. 
+
+These are relateed because, conversely, creating a ChineseLocalizer object among the SpanishLocalizer objects would be inapplicable. 
 
 Additionally, a subclass of the `AbstractLocalizer` that is more customizeable may be created:
 
@@ -151,8 +189,8 @@ activities_cn = {
     "play volleyball": "打排球",
 }
 
-cn = LanguageLocalizer("Chinese", activities_cn)
-print(cn.localize("paddle"))                        # "划船"   
+cn_activi = LanguageLocalizer("Chinese", activities_cn)
+print(cn_activi.localize("paddle"))                        # "划船"   
 ```
 This introduces flexibiliy to the localizer object that is created. 
 

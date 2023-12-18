@@ -1,13 +1,3 @@
-# Design Patterns
-
-## Importance of Design Patterns
-
-- Because design patterns encapsulate solutions to recurring problems, conceptualizing and understanding patterns allows for an **abstraction for reasoning about designs**. 
-- The patterns integrate and encapsulate **best practices** that have been proven to work. 
-- Patterns bridge the gap between high level design concepts with implementation allowing for easier **transition between design and development**. 
-- Having a common **design vocabulary** allows common language for discussion among developers.
-- Patterns enable **documentation** of explicit solutions to common problems.
-
 # OOP Design Patterns
 
 <div align="center">
@@ -51,6 +41,16 @@ II. [Design Pattern Overview](./design-patterns/design-patterns.md)
 
 &emsp;C. [Behavioral Patterns](./design-patterns/OOP03-behavioral-patterns/behavioral-patterns.md)
 <hr/>
+
+# Design Patterns
+
+## Importance of Design Patterns
+
+- Because design patterns encapsulate solutions to recurring problems, conceptualizing and understanding patterns allows for an **abstraction for reasoning about designs**. 
+- The patterns integrate and encapsulate **best practices** that have been proven to work. 
+- Patterns bridge the gap between high level design concepts with implementation allowing for easier **transition between design and development**. 
+- Having a common **design vocabulary** allows common language for discussion among developers.
+- Patterns enable **documentation** of explicit solutions to common problems.
 
 ### **Sources**
 [1] Gamma, Erich; Helm, Richard; Johnson, Ralph; Vlissides, John (1995). Design Patterns. Massachusetts: Addison-Wesley. p.10. ISBN 0-201-63361-2. Retrieved 2023-12-13.
