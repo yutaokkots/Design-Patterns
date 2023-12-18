@@ -7,8 +7,8 @@
 |├── Scope ──┤|├─────────|── Purpose ──|─────────┤|
 |:---:|---|---|---|
 ||<span style="color:lightgray">**Creational**</span>|**Structural**|<span style="color:lightgray">**Behavioral**</span>|
-|**class**|<span style="color:lightgray">· factory </span>|· adapter|<span style="color:lightgray">· interpretor<br/> · template method</span>|
-|**object**|<span style="color:lightgray">· abstract factory<br/> · builder<br/> · prototype<br/> · singleton </span>|· adapter<br/> · bridge<br/> · composite<br/> · decorator<br/> · facade<br/> · flyweight<br/> · proxy |<span style="color:lightgray">· chain of responsibility<br/> · command<br/> · iterator<br/> · mediator<br/> · memento<br/> · observer<br/> · state<br/> · strategy<br/> · visitor </span>|
+|**class**|<span style="color:lightgray">· factory </span>|· [adapter](./adapter.md)|<span style="color:lightgray">· interpretor<br/> · template method</span>|
+|**object**|<span style="color:lightgray">· abstract factory<br/> · builder<br/> · prototype<br/> · singleton </span>|· [adapter](./adapter.md)<br/> · bridge<br/> · composite<br/> · decorator<br/> · facade<br/> · flyweight<br/> · proxy |<span style="color:lightgray">· chain of responsibility<br/> · command<br/> · iterator<br/> · mediator<br/> · memento<br/> · observer<br/> · state<br/> · strategy<br/> · visitor </span>|
 
 </div>
 
@@ -22,7 +22,7 @@ Concerned with how classes and objects are composed to form larger structures.
 
 ## Adapter Pattern
 
-An Adapter (wrapper) allows incompatible interfaces to work together by providing a wrapper that converts the interface of a class into another interface that a client expects. It helps integrate existing systems and classes that otherwise couldn't collaborate.
+An [Adapter (wrapper)](./adapter.md) allows incompatible interfaces to work together by providing a wrapper that converts the interface of a class into another interface that a client expects. It helps integrate existing systems and classes that otherwise could not collaborate.
 
 ## Bridge Pattern
 
