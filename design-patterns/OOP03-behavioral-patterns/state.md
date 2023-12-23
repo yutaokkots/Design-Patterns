@@ -117,3 +117,91 @@ State -
     b. implement the interface with a class per state
     c. let the parent entity delegate logic to the active state
     d. provide a way for states to transition to one another
+
+
+## Example of State pattern with light bulbs
+
+
+```
+from random import randint
+from time import time, sleep
+
+##================================
+
+State = type("State", (object,), {}) #creates a State base class
+
+class LightOn(State):
+    def Execute(self):
+        print("Light is on")
+
+class LightOff(State):
+    def Execute(self):
+        print("Light is off")
+
+##================================
+
+class Transition(object):
+    def __init__(self, toState):
+        self.toState = toState
+
+    def Execute(self):
+        print(f"Transitioning to {self.toState}") 
+
+##================================
+
+class SimpleFSM(object):
+    def __init__(self, char):
+        self.char = char
+        self.states = {}
+        self.transitions = {}
+        self.currState = None
+        self.trans = None
+
+    def SetState(self, stateName):
+        self.currState = self.states[stateName]
+
+    def Transition(self, transName):
+        self.trans = self.transitions[transName]
+
+    def Execute(self):
+        if (self.trans):
+            self.trans.Execute()
+            self.SetState(self.trans.toState)
+            self.trans = None
+        self.currState.Execute()
+
+##================================
+
+class Char(object):
+    def __init__(self):
+        self.FSM = SimpleFSM(self)
+        self.LightOn = True
+
+##================================
+
+if __name__ == "__main__":
+    light = Char()
+
+    light.FSM.states["On"] = LightOn()
+    light.FSM.states["Off"] = LightOff()
+    light.FSM.transitions["toOn"] = Transition("On")
+    light.FSM.transitions["toOff"] = Transition("Off")
+
+    light.FSM.SetState("On")
+
+    for i in range(20):
+        startTime = time()
+        timeInterval = 1
+        print(startTime)
+        print(light.LightOn)
+        while (startTime + timeInterval > time()):  
+            pass
+        if randint(0,2):
+            if light.LightOn:
+                light.FSM.Transition("toOff")
+                light.LightOn = False
+            else:
+                light.FSM.Transition("toOn")
+                light.LightOn = True
+
+```
