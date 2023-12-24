@@ -139,9 +139,11 @@ payFailed() ┌──> closed <-----------> open <─┐ payOK()
     c. let the parent entity delegate logic to the active state
     d. provide a way for states to transition to one another
 
+<hr/>
+
 ## **Example 1 - State design pattern with a light-switch/lightbulb**
 
-The following code in this section can be placed into a single document in order (e.g. '`lightbulb_fsm.py`' and run.)
+The following code in this section can be placed into a single document in order (e.g. ['`lightbulb.py`'](lightbulb.py) and run.)
 
 <div align="center">
 
@@ -150,16 +152,31 @@ The following code in this section can be placed into a single document in order
 </div>
 
 ```
-from random import randint
-from time import time, sleep
+from time import sleep
 from abc import ABC, abstractmethod
 ```
 
 <div align="center">
 
-**abstract class definition**
+**abstract state class definition**
 
 </div>
+
+The abstract state class declares methods and attributes representing the various state-specific behaviors. In this example, it contains an abstract method called `do_action` that the concrete classes inherit. It also contains the ability to define the related Context, using `@property` and a method here called  `context()`. 
+
+Methods
+-------
+do_action
+    the shared action among the concrete classes.
+
+Attributes
+----------
+@property
+
+context() : property
+
+the context reference, declared as a method but 
+defined as a @property
 
 ```
 class AbstractLightState(ABC):
@@ -179,11 +196,9 @@ class AbstractLightState(ABC):
         """Defines the 'setter' of the context
         
         The '@context.setter' decorator refers to the 'self.context()'
-        property defined above. 'self.context()' is now a 'property' due to 
-        the @property decorator. The @property decorater provides the ".setter"
-        method, which reads:
-
-        in builtins.pyi
+        property defined above. 'self.context()' is now a 'property' due to
+        the @property decorator. The @property decorater provides the 
+        ".setter" method, which reads (inside the file, builtins.pyi):
             class property:
                 ...
                 def setter(self, __fset: Callable[[Any, Any], None]) -> property: ...
@@ -201,6 +216,8 @@ class AbstractLightState(ABC):
 **state objects (e.g. On and Off state)**
 
 </div>
+
+The state(s) represents a specific condition or situation in the system.
 
 ```
 class LightOn(AbstractLightState):
@@ -238,10 +255,12 @@ class LightOff(AbstractLightState):
 class LightContext:
     """The context class for the light."""
 
-    """References the current state of this context; a class attribute."""
+    ## References the current state of this context; a class attribute.
     current_state_ref = None
 
-    def __init__(self, state1: AbstractLightState, state2: AbstractLightState) -> None:
+    def __init__(self, 
+            state1: AbstractLightState, 
+            state2: AbstractLightState) -> None:
         self.set_state(state1)
         self.curr_state = "1"
         self.state_dict = {"1": state1, "0": state2}
@@ -273,20 +292,47 @@ class LightContext:
 
 ```
 if __name__ == "__main__":
-    light = LightContext(LightOn(), LightOff())     # sets the LightContext to LightOn() state
+    # sets the LightContext to LightOn() state
+    light = LightContext(LightOn(), LightOff())     
     cycles = 10
     print("Starting:\n")
     light.request()
     for i in range(cycles):
         light.switch()
         light.request()
+```
+If the above code is placed in a single file and run, the following exemplary output is expected:
 
 ```
+Starting:
 
+Light is 💡 ON 10       # each number from 1 -> 10 is printed 
+
+Light is OFF 10
+
+Light is 💡 ON 10
+
+Light is OFF 10
+
+Light is 💡 ON 10
+
+Light is OFF 10
+
+Light is 💡 ON 10
+
+Light is OFF 10
+
+Light is 💡 ON 10
+
+Light is OFF 10
+
+Light is 💡 ON 10
+```
+<hr/>
 
 ## **Example 2 - FSM pattern with a light-switch/lightbulb** 
 
-The following code can be placed into a single document in order (e.g. '`lightbulb_fsm.py`' and run.)
+The following code can be placed into a single document in order (e.g. ['`lightbulb_fsm.py`'](lightbulb_fsm.py) and run.)
 
 <div align="center">
 
