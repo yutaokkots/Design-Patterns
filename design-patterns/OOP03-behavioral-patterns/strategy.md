@@ -291,6 +291,6 @@ The above code can be represented in the following diagram:
   │                                         └───├──────────┤         
   │                                             │quack()   │              
   │                                             └──────────┘ 
-  └ the setFlyBehav() and setQuackBehav() methods allows the the type of fly or 
+  └ the setFlyBehav() and setQuackBehav() methods allows the type of fly or 
     type of quack to be changed at run-time.
 ```
