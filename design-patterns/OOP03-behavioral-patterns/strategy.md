@@ -48,7 +48,6 @@ This relationship is a HAS-A type relationship (as opposed to an IS-A relationsh
 
 This example is similar to an example shown in <ins>Head First Design Patterns</ins> by Freeman *et al.*
 
-
 ```
 abstract_duck.py
 
@@ -126,7 +125,6 @@ class MallardDuck(AbstractDuck):
         print(mallard_duck)
 
 ```
-
 
 ```
 rubber_duck.py
