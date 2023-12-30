@@ -9,7 +9,7 @@
 |:---:|---|---|---|
 ||[**Creational**](./design-patterns//OOP01-creational-patterns/creational-patterns.md)|[**Structural**](./design-patterns/OOP02-structural-patterns/structural-patterns.md)|[**Behavioral**](./design-patterns/OOP03-behavioral-patterns/behavioral-patterns.md)|
 |**class**|· [factory](./design-patterns/OOP01-creational-patterns/factory-method.md)|· [adapter](./design-patterns/OOP02-structural-patterns/adapter.md)|· interpretor<br/> · template method|
-|**object**|· [abstract factory](./design-patterns/OOP01-creational-patterns/abstract-factory.md)<br/> · [builder](./design-patterns/OOP01-creational-patterns/builder.md)<br/> · [prototype](./design-patterns/OOP01-creational-patterns/prototype.md)<br/> · singleton|· [adapter](./adapter.md)<br/> · [bridge](./bridge.md)<br/> · [composite](./composite.md)<br/> · [decorator](./design-patterns/OOP02-structural-patterns/decorator.md)<br/> · [facade](./facade.md)<br/> · flyweight<br/> · [proxy](./proxy.md) |· chain of responsibility<br/> · command<br/> · iterator<br/> · mediator<br/> · memento<br/> · observer<br/> · state<br/> · strategy<br/> · visitor|
+|**object**|· [abstract factory](./design-patterns/OOP01-creational-patterns/abstract-factory.md)<br/> · [builder](./design-patterns/OOP01-creational-patterns/builder.md)<br/> · [prototype](./design-patterns/OOP01-creational-patterns/prototype.md)<br/> · singleton|· [adapter](./adapter.md)<br/> · [bridge](./bridge.md)<br/> · [composite](./composite.md)<br/> · [decorator](./design-patterns/OOP02-structural-patterns/decorator.md)<br/> · [facade](./facade.md)<br/> · flyweight<br/> · [proxy](./proxy.md) |· chain of responsibility<br/> · command<br/> · iterator<br/> · mediator<br/> · memento<br/> · observer<br/> · [state](./design-patterns/OOP03-behavioral-patterns/state.md)<br/> · [strategy](./design-patterns/OOP03-behavioral-patterns/strategy.md)<br/> · visitor|
 
 </div>
 
@@ -49,8 +49,8 @@ II. [Design Pattern Overview](./design-patterns/design-patterns.md)
 6. mediator
 7. memento
 8. observer
-9. state
-10. strategy
+9. [state](./design-patterns/OOP03-behavioral-patterns/state.md)
+10. [strategy](./design-patterns/OOP03-behavioral-patterns/strategy.md)
 11. visitor
 
 <hr/>
