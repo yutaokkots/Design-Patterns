@@ -208,7 +208,7 @@ class AbstractLightState(ABC):
 
     @abstractmethod
     def do_action(self) -> None:
-        pass
+        ...
 ```
 
 <div align="center">
@@ -359,7 +359,7 @@ class AbstractLight(ABC):
     @abstractmethod
     def execute(self):
         "Abstract method for execute method."
-        pass
+        ...
 ```
 
 <div align="center">

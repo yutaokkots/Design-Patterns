@@ -36,7 +36,7 @@ class AbstractLightState(ABC):
 
     @abstractmethod
     def do_action(self) -> None:
-        pass
+        ...
 
 ##================================
 

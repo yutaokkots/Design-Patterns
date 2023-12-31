@@ -25,16 +25,16 @@ This relationship is a HAS-A type relationship (as opposed to an IS-A relationsh
     ├ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┤       └──┬───────────────────┘ 
     │fight()                    │          △
     ├ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┤          │ interface
-  ┌─│setWeapon(w:WeaponBehav):  │          ├ ─ ┬ ─ ┐                  
-  │ │   self.weapon_behavior = w│   ┌──────┴───┼───┼─┐                      
-  │ └──────────┬────────────────┘   │SwordBehav│or │ │                       
-  │            △ inheritance        ├ ─ ┌──────┴───┼─┴──┐        
-  │            ├───┬───┐            │   │AxeBehavio│    │               
-  │     ┌──────┴───┼───┼─┐          └───├ ─ ┌──────┴────┴───┐               
-  │     │  Troll   │   │ │              │   │KnifeBehavior  │               
-  │     ├ ─ ┌──────┴───┼─┴──┐           └───├───────────────┤         
-  │     │   │  Queen   │    │               │useWeapon()    │              
-  │     └───├ ─ ┌──────┴────┴───┐           └───────────────┘             
+  ┌─│setWeapon(w:WeaponBehav):  │          ├ ─ ┬ ─ ┐      
+  │ │   self.weapon_behavior = w│   ┌──────┴───┼───┼─┐  
+  │ └──────────┬────────────────┘   │SwordBehav│or │ │     
+  │            △ inheritance        ├ ─ ┌──────┴───┼─┴──┐ 
+  │            ├───┬───┐            │   │AxeBehavio│    │
+  │     ┌──────┴───┼───┼─┐          └───├ ─ ┌──────┴────┴───┐ 
+  │     │  Troll   │   │ │              │   │KnifeBehavior  │ 
+  │     ├ ─ ┌──────┴───┼─┴──┐           └───├───────────────┤  
+  │     │   │  Queen   │    │               │useWeapon()    │ 
+  │     └───├ ─ ┌──────┴────┴───┐           └───────────────┘ 
   │         │   │  King         │      
   │         └───├───────────────┤       
   │             │fight()        │       
@@ -73,22 +73,22 @@ class AbstractDuck(ABC):
     @abstractmethod
     def perform_fly(self):
         """Defines the fly method."""
-        pass
+        ...
 
     @abstractmethod
     def perform_quack(self):
         """Defines the quack method."""
-        pass
+        ...
 
     @abstractmethod
     def float(self):
         """Defines the float method."""
-        pass
+        ...
 
     @abstractmethod
     def display(self):
         """Defines the display method"""
-        pass
+        ...
 
 ```
 
@@ -204,7 +204,7 @@ class AbstractFly(ABC):
     """Abstract base class for Fly behavior"""
     @abstractmethod
     def fly(self):
-        pass
+        ...
 
 class Fly(AbstractFly):
     """Fly class for regular flying behavior."""
@@ -234,7 +234,7 @@ class AbstractQuack(ABC):
     
     @abstractmethod
     def quack(self):
-        pass
+        ...
 
 class Quack(AbstractQuack):
     """Quack class for regular quacking behavior."""
