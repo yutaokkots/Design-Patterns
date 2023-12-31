@@ -44,7 +44,7 @@ C. **[Behavioral Patterns](./design-patterns/OOP03-behavioral-patterns/behaviora
 10. [strategy](./design-patterns/OOP03-behavioral-patterns/strategy.md)
 11. visitor
 
-<hr/>
+
 
 <div align="center">
 
@@ -57,6 +57,8 @@ C. **[Behavioral Patterns](./design-patterns/OOP03-behavioral-patterns/behaviora
 |**object**|· [abstract factory](./design-patterns/OOP01-creational-patterns/abstract-factory.md)<br/> · [builder](./design-patterns/OOP01-creational-patterns/builder.md)<br/> · [prototype](./design-patterns/OOP01-creational-patterns/prototype.md)<br/> · singleton|· [adapter](./adapter.md)<br/> · [bridge](./bridge.md)<br/> · [composite](./composite.md)<br/> · [decorator](./design-patterns/OOP02-structural-patterns/decorator.md)<br/> · [facade](./facade.md)<br/> · flyweight<br/> · [proxy](./proxy.md) |· [chain of responsibility](./design-patterns/OOP03-behavioral-patterns/chain-of-responsibility.md)<br/> · command<br/> · iterator<br/> · [mediator](./design-patterns/OOP03-behavioral-patterns/mediator.md)<br/> · memento<br/> · [observer](./design-patterns/OOP03-behavioral-patterns/observer.md)<br/> · [state](./design-patterns/OOP03-behavioral-patterns/state.md)<br/> · [strategy](./design-patterns/OOP03-behavioral-patterns/strategy.md)<br/> · visitor|
 
 </div>
+
+<hr/>
 
 ## **Why Design Patterns?**
 
@@ -76,6 +78,5 @@ C. **[Behavioral Patterns](./design-patterns/OOP03-behavioral-patterns/behaviora
 
 <hr>
 
-### **Sources**
-[1] Gamma, Erich; Helm, Richard; Johnson, Ralph; Vlissides, John (1995). Design Patterns. Massachusetts: Addison-Wesley. p.10. ISBN 0-201-63361-2. Retrieved 2023-12-13.
+<sup[1]</sup> Gamma, Erich; Helm, Richard; Johnson, Ralph; Vlissides, John (1995). Design Patterns. Massachusetts: Addison-Wesley. p.10. ISBN 0-201-63361-2. Retrieved 2023-12-13.
 

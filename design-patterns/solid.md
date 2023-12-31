@@ -23,7 +23,13 @@ In 2004 or thereabouts, [Michael Feathers](https://michaelfeathers.silvrback.com
 
 </div>
 
-Responsibility is "a reason for change (code modification)."
+$~~~~~~~~~~~$ "<ins>A Responsibility is a person</ins>. It's not something that the code does; it's a ***person*** - a person who wants to make a change in the code.
+
+$~~~~~~~~~~~$ "'My code has a responsibilty to that business guy who wants the rules changed. My code has a responsibilty to that clerk who wants the format changed.'
+
+$~~~~~~~~~~~$ "... The Single Responsibility Principle says: any module should be responsible to only ***one person***." <sup>[4]</sup>
+
+<br/>
 
 The single responsibility principle states that every module, class, or function in code should have only one responsibility, and only one reason for the code to be modified.
 
@@ -135,3 +141,4 @@ Edsger W. Dijkstra.
 
 [3] Dijkstra, Edsger W. On the role of scientific thought. Transcribed by Richard Walker. https://www.cs.utexas.edu/users/EWD/transcriptions/EWD04xx/EWD447.html. 30th August 1974. Last revised on Mon, 25 Oct 2010. Retrieved Dec. 30, 2023.
 
+[4] Martin, Robert Cecil. The Single Responsibility Principle. gnbitcom. https://www.youtube.com/watch?app=desktop&v=Gt0M_OHKhQE Published June 3, 2014.

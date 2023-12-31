@@ -36,9 +36,9 @@ The **class** specifies the object's internal data and representation (**class a
 ## Class Inheritance
 **Inheritance** - The subclass inherits the definitions of all data and operations that is defined by the parent class. Inheritance is a mechanism for extending an application's functionality by reusing functionality in parent classes.
 
-**Abstract Class** - is a common interface for a parent class too its subclasses. Abstract classes cannot be instantiated, but rather serves to help define its implementation for the subclasses. On a related note, **abstract methods** are operations that are declared but not implemented. 
+**Abstract Class** - is a common interface for a parent class too its subclasses. Abstract classes cannot be instantiated, but rather serves to help define its implementation for the subclasses. On a related note, **abstract methods** are operations that are declared but not implemented. Similar to the concept of Interfaces in Java. 
 
-**Concrete Class** - the 'opposite' of an Abstract class - a class that is implemented
+**Concrete Class** - the 'opposite' of an Abstract class - a class that is implemented. 
 
 **Method Override** - the act of creating class methods that modify the operations of the parent class to be customized for the subclass. 
 
@@ -58,7 +58,7 @@ The **class** specifies the object's internal data and representation (**class a
             └─────────────────┘
 ```
 
-**Mixin Class** - provides an optional interface or functionality to the subclass. It is "mixed in" with the parent class to create the subclass. 
+**Mixin Class** - provides an optional interface or functionality to the subclass. It is "mixed in" with the parent class to create the subclass. It is a form of class composition.
 ```
         ┌─────────────────────┐   ┌─────────────────────┐
         │    ExistingClass    │   │        Mixin        │
