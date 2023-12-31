@@ -46,7 +46,7 @@ This relationship is a HAS-A type relationship (as opposed to an IS-A relationsh
 
 ## **Example with Ducks**
 
-This example is similar to an example shown in <ins>Head First Design Patterns</ins> by Freeman *et al.*
+This example is similar to an example shown in <ins>Head First Design Patterns</ins> by Freeman *et al.* <sup>[1]</sup>
 
 ```
 abstract_duck.py
@@ -294,3 +294,7 @@ The above code can be represented in the following diagram:
   └ the setFlyBehav() and setQuackBehav() methods allows the type of fly or 
     type of quack to be changed at run-time.
 ```
+
+<hr>
+
+<sup>[1]</sup> Eric Freeman, Elisabeth Robson, Bert Bates, Kathy Sierra. (2004). Head First Design Patterns. p 56. ISBN-13: 978-0-596-00712-6.
