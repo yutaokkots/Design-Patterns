@@ -9,19 +9,19 @@
 |:---:|---|---|---|
 ||[**Creational**](./design-patterns//OOP01-creational-patterns/creational-patterns.md)|[**Structural**](./design-patterns/OOP02-structural-patterns/structural-patterns.md)|[**Behavioral**](./design-patterns/OOP03-behavioral-patterns/behavioral-patterns.md)|
 |**class**|· [factory](./design-patterns/OOP01-creational-patterns/factory-method.md)|· [adapter](./design-patterns/OOP02-structural-patterns/adapter.md)|· interpretor<br/> · template method|
-|**object**|· [abstract factory](./design-patterns/OOP01-creational-patterns/abstract-factory.md)<br/> · [builder](./design-patterns/OOP01-creational-patterns/builder.md)<br/> · [prototype](./design-patterns/OOP01-creational-patterns/prototype.md)<br/> · singleton|· [adapter](./adapter.md)<br/> · [bridge](./bridge.md)<br/> · [composite](./composite.md)<br/> · [decorator](./design-patterns/OOP02-structural-patterns/decorator.md)<br/> · [facade](./facade.md)<br/> · flyweight<br/> · [proxy](./proxy.md) |· chain of responsibility<br/> · command<br/> · iterator<br/> · mediator<br/> · memento<br/> · observer<br/> · [state](./design-patterns/OOP03-behavioral-patterns/state.md)<br/> · [strategy](./design-patterns/OOP03-behavioral-patterns/strategy.md)<br/> · visitor|
+|**object**|· [abstract factory](./design-patterns/OOP01-creational-patterns/abstract-factory.md)<br/> · [builder](./design-patterns/OOP01-creational-patterns/builder.md)<br/> · [prototype](./design-patterns/OOP01-creational-patterns/prototype.md)<br/> · singleton|· [adapter](./adapter.md)<br/> · [bridge](./bridge.md)<br/> · [composite](./composite.md)<br/> · [decorator](./design-patterns/OOP02-structural-patterns/decorator.md)<br/> · [facade](./facade.md)<br/> · flyweight<br/> · [proxy](./proxy.md) |· [chain of responsibility](./design-patterns//OOP03-behavioral-patterns//chain-of-responsibility.md)<br/> · command<br/> · iterator<br/> · mediator<br/> · memento<br/> · [observer](./design-patterns//OOP03-behavioral-patterns//observer.md)<br/> · [state](./design-patterns/OOP03-behavioral-patterns/state.md)<br/> · [strategy](./design-patterns/OOP03-behavioral-patterns/strategy.md)<br/> · visitor|
 
 </div>
 
 # Index of Design Pattern Concepts
 
-
-
 I. Introduction to [classes](./design-patterns/Classes.md) and [design concepts](./design-patterns/Design-concepts.md)
 
-II. [Design Pattern Overview](./design-patterns/design-patterns.md)
+II. [S.O.L.I.D. Principles](./design-patterns/solid.md)
 
-&emsp;A. [Creational Patterns](./design-patterns//OOP01-creational-patterns/creational-patterns.md)
+III. [Design Pattern Overview](./design-patterns/design-patterns.md)
+
+A. [Creational Patterns](./design-patterns//OOP01-creational-patterns/creational-patterns.md)
 
 1. [Factory Method](./design-patterns/OOP01-creational-patterns/factory-method.md)
 2. [Abstract Factory](./design-patterns/OOP01-creational-patterns/abstract-factory.md)
@@ -29,7 +29,7 @@ II. [Design Pattern Overview](./design-patterns/design-patterns.md)
 4. [Prototype](./design-patterns/OOP01-creational-patterns/prototype.md)
 5. Singleton
 
-&emsp;B. [Structural Patterns](./design-patterns/OOP02-structural-patterns/structural-patterns.md)
+B. [Structural Patterns](./design-patterns/OOP02-structural-patterns/structural-patterns.md)
 
 1. [Adapter](./design-patterns/OOP02-structural-patterns/adapter.md)
 2. [Bridge](./design-patterns/OOP02-structural-patterns/bridge.md)
@@ -39,16 +39,16 @@ II. [Design Pattern Overview](./design-patterns/design-patterns.md)
 6. Flyweight
 7. [Proxy](./design-patterns/OOP02-structural-patterns/proxy.md)
 
-&emsp;C. [Behavioral Patterns](./design-patterns/OOP03-behavioral-patterns/behavioral-patterns.md)
+C. [Behavioral Patterns](./design-patterns/OOP03-behavioral-patterns/behavioral-patterns.md)
 
 1. interpretor
 2. template method
-3. chain of responsibility
+3. [chain of responsibility](./design-patterns//OOP03-behavioral-patterns//chain-of-responsibility.md)
 4. command
 5. iterator
 6. mediator
 7. memento
-8. observer
+8. [observer](./design-patterns//OOP03-behavioral-patterns//observer.md)
 9. [state](./design-patterns/OOP03-behavioral-patterns/state.md)
 10. [strategy](./design-patterns/OOP03-behavioral-patterns/strategy.md)
 11. visitor
