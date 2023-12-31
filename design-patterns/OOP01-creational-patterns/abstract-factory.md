@@ -2,6 +2,8 @@
 
 The Abstract Factory is a creational design pattern that directly takes one or more parameters such that subclasses can be customized based on them. Families of related or dependent objects can be created.
 
+". . . maybe you could pursue a lowest-common-denominator strategy, and require all interfaces to take in the parameters you need for just one of the implementations" <sup>[1]</sup>
+
 An abstract factory is a ***set of factory methods***. 
 
 The Factory Method pattern is useful for creating a single object, while the Abstract Factory pattern is useful for creating multiple objects.
@@ -206,3 +208,5 @@ This introduces flexibiliy to the localizer object that is created.
 </div>
 
 <hr>
+
+<sup>[1]</sup> "AbstractFactory" Portland Pattern Repository. http://wiki.c2.com/?AbstractFactory. September 8, 2013. Retrieved Dec. 30, 2023.

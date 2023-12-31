@@ -29,7 +29,6 @@ The Observer Pattern defines a one-to-many dependency between objects so that wh
 
 ### **Example of Inefficient implementation**
 
-
 ```
 class CurrentConditionsDisplay:
     def __init__(self):
