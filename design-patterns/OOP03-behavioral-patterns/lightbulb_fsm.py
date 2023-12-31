@@ -15,7 +15,7 @@ class AbstractLight(ABC):
     @abstractmethod
     def execute(self):
         "Abstract method for execute."
-        pass
+        ...
 
 ##================================
 

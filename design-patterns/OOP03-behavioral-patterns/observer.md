@@ -25,7 +25,6 @@ The Observer Pattern defines a one-to-many dependency between objects so that wh
     │getState()         │           └───────────────────┘
     │setState()         │
     └───────────────────┘
-
 ```
 
 ### **Example of Inefficient implementation**
@@ -176,17 +175,17 @@ class Subject(ABC):
     @abstractmethod
     def register_observer(self, observer: Observer):
         """Registers an observer."""
-        pass
+        ...
 
     @abstractmethod
     def remove_observer(self, observer:Observer):
         """Removes the observer."""
-        pass
+        ...
 
     @abstractmethod
     def notify_observers(self):
         """Notifies all observers"""
-        pass
+        ...
 
 class WeatherData(Subject):
     """Concrete class for the WeatherData using Subject abstract base class."""
@@ -230,7 +229,7 @@ from abc import ABC, abstractmethod
 class Observer(ABC):
     @abstractmethod
     def update(self, temp:float, humidity:float, pressure:float):
-        pass
+        ...
 ```
 
 ```
@@ -244,7 +243,7 @@ class DisplayElement(ABC):
 
     @abstractmethod
     def display(self):
-        pass
+        ...
 ```
 
 **Display Concrete classes**
