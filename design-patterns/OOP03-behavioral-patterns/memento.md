@@ -29,6 +29,17 @@ Goals:
     └───────────────────────────┘
 ```
 
+**<ins>Memento</ins>** stores internal state of the Originator object.
+
+It protects against access by objects other than the originator. Mementos have effectively two interfaces. Caretaker sees a narrow interface to the Memento—it can only pass the memento to other objects. Originator, in contrast, sees a wide interface, one that lets it access all the data necessary to restore itself to its previous state.
+
+**<ins>Originator</ins>** creates a memento containing a snapshot of its current internal state.
+
+It uses the memento to restore its internal state.
+
+**<ins>Caretaker</ins>** is responsible for the memento's safekeeping.
+
+It never operates on or examines the contents of a memento.
 <hr/>
 
 <sup>[1]</sup> Freeman *et al.*. Head First Design Patterns. 2004. p625.
