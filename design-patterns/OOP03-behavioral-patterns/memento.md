@@ -45,15 +45,15 @@ It can keep a list of past memento states and cause the originator to return to 
 ## **Example Implementation of Memento pattern**
 
 ```
-    ┌─────────────────────┐     ┌────────────────┐      ┌─────────────────┐   
+    ┌─────────────────────┐     ┌────────────────┐      ┌─────────────────┐
     │AbstractOriginator   │     │AbstractMemento │      │AbstractCaretaker│
     ├─────────────────────┤     ├────────────────┤      └──────┬──────────┘
     │SetMemento(Memento m)│     │ GetState()     │             △
     │saveMemento()        │     │ SetName()      │             │
     │exemplary_change()   │     └─────┬──────────┘             │
-    └──────────┬──────────┘           △                        │ 
+    └──────────┬──────────┘           △                        │
                △                      │                        │
-    ┌──────────┴──────────┐     ┌─────┴──────────┐      ┌──────┴─────────┐   
+    ┌──────────┴──────────┐     ┌─────┴──────────┐      ┌──────┴─────────┐
     │  Originator         │     │    Memento     │<---<>│   Caretaker    │
     ├─────────────────────┤     ├────────────────┤      ├────────────────┤
     │SetMemento(Memento m)├ ─ ─>│ GetState()     │      │ backup()       │
