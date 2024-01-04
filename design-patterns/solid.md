@@ -2,15 +2,17 @@
 
 In 2004 or thereabouts, [Michael Feathers](https://michaelfeathers.silvrback.com) sent me an email saying that if I rearranged the principles, their first words would spell the word SOLID - and thus the SOLID principles were born.<sup>[1]</sup>
 
-**<u>S</u>ingle Responsibility Principle** - *There should never be more than one reason for a class to change.*
+<hr/>
 
-**<u>O</u>pen-Closed Principle** - *A module should be open for extension but closed for modification.*
+$~~~~~~$ **<u>S</u>ingle Responsibility Principle** - *There should never be more than one reason for a class to change.*
 
-**<u>L</u>iskov Substitution Principle** - *Subclasses should be substitutable for their base classes.*
+$~~~~~~$ **<u>O</u>pen-Closed Principle** - *A module should be open for extension but closed for modification.*
 
-**<u>I</u>nterface Segregation Principle** - *Many client specific interfaces are better than one general purpose interface.*
+$~~~~~~$ **<u>L</u>iskov Substitution Principle** - *Subclasses should be substitutable for their base classes.*
 
-**<u>D</u>ependency Inversion Principle** - *Depend upon Abstractions. Do not depend upon concretions.*
+$~~~~~~$ **<u>I</u>nterface Segregation Principle** - *Many client specific interfaces are better than one general purpose interface.*
+
+$~~~~~~$ **<u>D</u>ependency Inversion Principle** - *Depend upon Abstractions. Do not depend upon concretions.*
 
 <hr/>
 
@@ -51,6 +53,7 @@ Change the behavior of the modules without changing the source code of the modul
 *i.e.* write modules so they can be extended, without having to modify them. 
 
 ### Dynamic polymorphism (run-time polymorphism)
+
     method overriding
 
 ```
@@ -101,13 +104,17 @@ print(result_float)  # Output: 6.0
 
 </div>
 
+$~~~~~~~~~~~$ "A subtype should behave like a super type as far as you can tell by using the super type methods. So it wasn't that it couldn't behave differently, it's just that as long as you limited your interaction with its ojects to the super type methods, you would get the behavior you expected... Technically it's called behavioral subtyping - subtypes behave like super types." - [Barbara Liskov](https://www.youtube.com/watch?app=desktop&v=-Z-17h3jG0A) <sup>[2]</sup>
+
+<br>
+
 "Derived classes should be substitutable for their base classes. That is, a user of a base class should continue to function properly if a derivative of that base class is passed to it."
 
 Derived methods should expect no more and provide no less:
 A derived class is substitutible if its preconditions are no stronger than the base class method.
 A derived class is substitutible if its postconditions are no weaker than the base class method.
 
-["A subtype should behave like a super type as far as you can tell by using the super type methods. So it wasn't that it couldn't behave differently, it's just that as long as you limited your interaction with its ojects to the super type methods, you would get the behavior you expected... Technically it's called behavioral subtyping - subtypes behave like super types." - Barbara Liskov](https://www.youtube.com/watch?app=desktop&v=-Z-17h3jG0A) <sup>[2]</sup>
+
 
 
 <div align="center">
@@ -135,10 +142,10 @@ Edsger W. Dijkstra.
 
 <hr>
 
-[1] Martin, Robert Cecil (2018). Clean Architecture: A Craftsman's Guide to Software Structure and Design. p. 58. ISBN 9780134494166.
+<sup>[1]</sup> Martin, Robert Cecil (2018). Clean Architecture: A Craftsman's Guide to Software Structure and Design. p. 58. ISBN 9780134494166.
 
-[2] Liskov, Barbara. Interview by Tom van Vleck for the Association for Computing Machinery on April 20, 2016 https://www.youtube.com/watch?app=desktop&v=-Z-17h3jG0A Retrieved Dec. 30, 2023.
+<sup>[2]</sup> Liskov, Barbara. Interview by Tom van Vleck for the Association for Computing Machinery on April 20, 2016 https://www.youtube.com/watch?app=desktop&v=-Z-17h3jG0A Retrieved Dec. 30, 2023.
 
-[3] Dijkstra, Edsger W. On the role of scientific thought. Transcribed by Richard Walker. https://www.cs.utexas.edu/users/EWD/transcriptions/EWD04xx/EWD447.html. 30th August 1974. Last revised on Mon, 25 Oct 2010. Retrieved Dec. 30, 2023.
+<sup>[3]</sup> Dijkstra, Edsger W. On the role of scientific thought. Transcribed by Richard Walker. https://www.cs.utexas.edu/users/EWD/transcriptions/EWD04xx/EWD447.html. 30th August 1974. Last revised on Mon, 25 Oct 2010. Retrieved Dec. 30, 2023.
 
-[4] Martin, Robert Cecil. The Single Responsibility Principle. gnbitcom. https://www.youtube.com/watch?app=desktop&v=Gt0M_OHKhQE Published June 3, 2014.
+<sup>[4]</sup> Martin, Robert Cecil. The Single Responsibility Principle. gnbitcom. https://www.youtube.com/watch?app=desktop&v=Gt0M_OHKhQE Published June 3, 2014.
