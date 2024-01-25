@@ -78,5 +78,5 @@ C. **[Behavioral Patterns](./design-patterns/OOP03-behavioral-patterns/behaviora
 
 <hr>
 
-<sup[1]</sup> Gamma, Erich; Helm, Richard; Johnson, Ralph; Vlissides, John (1995). Design Patterns. Massachusetts: Addison-Wesley. p.10. ISBN 0-201-63361-2. Retrieved 2023-12-13.
+<sup>[1]</sup> Gamma, Erich; Helm, Richard; Johnson, Ralph; Vlissides, John (1995). Design Patterns. Massachusetts: Addison-Wesley. p.10. ISBN 0-201-63361-2. Retrieved 2023-12-13.
 

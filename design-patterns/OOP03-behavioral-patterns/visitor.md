@@ -1,11 +1,21 @@
 # Visitor
 
-Visitor allows defining a new operation without changing the classes of the elements on which it operates. <sup>[1]</sup> 
+Visitor allows defining a new operation (new method) without changing the classes of the elements on which it operates. <sup>[1]</sup> 
+
+*i.e.* No need to add an entirely new method to each class such that it changes the composite. 
 
 Separates **the algorithm** from the **object structure**.
 This separation allows new operations to be added to existing object structures without modifying the structures.
 
 Add capabilities to a composite of objects, where encapsulation is not important. <sup>[2]</sup> 
+
+### Visitor
+
+A Visitor pattern may generally consists of two key methods:
+
+* visit() - implemented by the visitor, and used and called for every element of the data structure
+* accept() - implemented by the visitable classes, allowing the Visitor to visit those classes. 
+
 
 ```
 ┌───────────┐               ┌───────────────────────┐
@@ -35,6 +45,11 @@ Add capabilities to a composite of objects, where encapsulation is not important
                     │Accept(Visitor v)      │   │Accept(Visitor v)      │
                     │OperationA             │   │OperationB             │
                     └───────────────────────┘   └───────────────────────┘
+```
+
+In the following example, 
+```
+
 ```
 
 <hr/>
